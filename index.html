@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+
+    <title>My Wish</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" /> -->
+    <meta property="og:title" content="Hire a Truck">
+    <meta property="og:description" content="We Move Everything">
+ 
+   <meta property="og:image" itemprop="image" content="https://lloydten.github.io/MnothoTruckHire/whatsappimg.png">
+   <meta property="og:url" content="https://mnothotruckhire™.co.za">
+   <meta property="og:type" content="artical">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mnotho Truck Hire</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body{
+            /* background-color: red; */
+        }
+
+        .quote-section {
+        overflow-x: hidden;
+    }
+        .banner {
+            position: relative;
+            background: url('bannerL.png') no-repeat center center;
+            background-size: cover;
+            height: 500px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            color: white;
+        }
+        .nav-link {
+            color: white;
+        }
+        .card-banner {
+            position: absolute;
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .circle-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 15px;
+        }
+        .circle-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .quote-section {
+            background-color: #1B273E;
+        }
+        .quote-section h2, .quote-section p, .quote-section .form-label {
+            color: white;
+        }
+        footer {
+            color: #ccc;
+        }
+        footer h5 {
+            color: #fff;
+        }
+        footer a {
+            color: #d1d1d1;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .bi {
+            margin-right: 8px;
+        }
+        .whatsapp-button {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        @media (max-width: 576px) {
+            .banner {
+                background-size: cover;
+                width: 100%;
+                background: url('Add a heading (1).png') no-repeat center center;
+            }
+            .banner-text {
+                display: none;
+            }
+            .card-banner {
+                width: 90%;
+                bottom: -100px;
+            }
+            .explore-section .col-md-6 {
+                text-align: center;
+            }
+            .explore-section img {
+                margin-bottom: 20px;
+            }
+            .whatsapp-button {
+                display: block;
+            }
+        }
+        .services-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+        .service-card {
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .theme-color {
+            color: #F05D07;
+        }
+        .reviews-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+        .review-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .review-card:hover {
+            transform: translateY(-10px);
+        }
+        .review-card .card-body {
+            padding: 30px;
+        }
+        .review-card img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+        .review-card h5 {
+            margin-top: 15px;
+        }
+        .review-card p {
+            color: #6c757d;
+        }
+        .contact-card {
+            transition: transform 0.3s;
+        }
+        .contact-card:hover {
+            transform: scale(1.05);
+        }
+        .modal-header {
+            border-bottom: none;
+        }
+        .modal-footer {
+            border-top: none;
+        }
+
+        .phone a {
+            color: #6c757d; /* Set your desired color here */
+            text-decoration: none; /* Optional: Remove underline if any */
+        }
+        .whats a {
+            color: #6c757d; /* Set your desired color here */
+            text-decoration: none; /* Optional: Remove underline if any */
+        }
+        .phoneCall {
+            color: inherit; /* Ensure the link inherits the color */
+            text-decoration: none; /* Optional: Remove underline */
+            display: block; /* Make the link cover the entire card body */
+            height: 100%; /* Ensure it covers the entire height */
+            width: 100%; /* Ensure it covers the entire width */
+        }
+        .phoneCallNav{
+            color: rgb(27, 64, 64); /* Ensure the link inherits the color */
+            text-decoration: none; /* Optional: Remove underline */
+        }
+    </style>
+</head>
+<body>
+    <div class="container d-none d-md-block" style="background-color:#1B273E;color: white;">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                  
+                    <i class="bi bi-telephone" style="font-size: 1.5rem; margin-right: 10px;"></i>
+                    <span>078 097 2730</span>
+                    <i class="bi bi-whatsapp" style="font-size: 1.5rem; margin-left: 20px; margin-right: 10px;"></i>
+                    <span>078 097 2730</span>
+                </div>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <div class="d-flex align-items-center justify-content-md-end">
+                    <i class="bi bi-clock" style="font-size: 1.5rem; margin-right: 10px;"></i>
+                    <span>Open Hours: 8-5 Monday to Saturday</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg d-none d-md-none d-lg-block navbar-light " style="border-bottom: rgb(241, 241, 241) solid 1px;color:#1B273E;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mx-auto" href="#"><img src="logo.png" alt="Logo" style="height: 50px;"></a>
+            <div class="d-flex align-items-center d-lg-none">
+               
+                <i class="bi bi-telephone-fill" style="font-size: 1.5rem;"></i>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a style="color: #1B273E;" class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  style="color: #1B273E;" class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  style="color: #1B273E;" class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  style="color: #1B273E;" class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light d-md-block d-lg-none sticky-top" style="background-color: white;" >
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mx-auto" href="#"><img src="logo.png" alt="Logo" style="height: 50px;"></a>
+            <div class="d-flex align-items-center">
+                <a href="tel:0616818405" class="phoneCallNav">
+                <i class="bi bi-telephone-fill" style="font-size: 1.5rem;"></i></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  style="color: #1B273E;" class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="banner">
+    <div class="banner-text">
+
+    </div>
+   
+    <div class="card card-banner text-center">
+        <div class="card-body">
+            <h5 class="card-title">We Move Anything</h5>
+            <p class="card-text">Experience the best truck hire services with MnothoTruckHire™. We offer reliable, safe, and affordable truck rentals for all your delivery, collection, removal, and goods transportation needs.</p>            <div class="d-flex justify-content-around mt-3">
+                <div>
+                    <i class="bi bi-shield-check theme-color" style="font-size: 2rem;"></i>
+                    <p>Safe</p>
+                </div>
+                <div>
+                    <i class="bi bi-currency-dollar theme-color" style="font-size: 2rem;"></i>
+                    <p>Affordable</p>
+                </div>
+                <div>
+                    <i class="bi bi-lock theme-color" style="font-size: 2rem;"></i>
+                    <p>Secure</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container  explore-section" style="margin-top: 120px;">
+    <div class="row align-items-center">
+        <div class="col-md-6 order-md-1 order-2">
+            <h2>We Drive. You Save</h2>
+            <p><span style="font-style: italic;">MnothoTruckHire™ </span> offers a stress-free moving experience with our reliable and cost-effective truck hire services. Let us handle the driving while you enjoy the savings.Give us the load and we will carry it!</p>
+            <a  data-bs-toggle="modal" data-bs-target="#getInTouchModal" class="btn btn-primary" style="height: 50px; width: 200px; line-height: 50px; display: inline-flex; align-items: center; justify-content: center;background-color: #1B273E;border-color:#1B273E;">Get In Touch</a>
+       
+        </div>
+        <div class="col-md-6 order-md-2 order-1">
+            <img src="https://assets.rbl.ms/34364006/origin.png?" alt="Trucks" class="img-fluid" style="width: 70%;">
+        </div>
+    </div>
+</div>
+
+    <section class="services-section">
+        <div class="container " style="margin-top: 70px;">
+            <div class="text-center mb-5">
+                <h2 style="font-size: 30px;">Our Services</h2>
+                <p>We offer a range of services to meet your moving and transportation needs.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card service-card text-center">
+                        <div class="card-body">
+                            <div class="circle-img">
+                                <img src="bannerS2.JPG" alt="Moving">
+                            </div>
+                            <h5 class="card-title mt-3">Moving</h5>
+                            <p class="card-text">We provide reliable moving services for goods, furniture, and office removals ensuring your belongings are transported safely and efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card text-center">
+                        <div class="card-body">
+                            <div class="circle-img">
+                                <img src="https://www.avis.com.au/content/dam/avis/oc/au/common/offers/group-v-mediumtray-900x600.jpg" alt="Truck Hire" >
+                            </div>
+                            <h5 class="card-title mt-3">Truck Hire</h5>
+                            <p class="card-text">Our fleet of trucks is available for hire. Whether you need a truck for deliveries or collections, we have the right vehicle to get the job done efficiently</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card text-center">
+                        <div class="card-body">
+                            <div class="circle-img">
+                                <img src="https://images.pexels.com/photos/6169006/pexels-photo-6169006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Goods Delivery">
+                            </div>
+                            <h5 class="card-title mt-3">Goods Transportation</h5>
+                            <p class="card-text">We offer reliable goods transportation services to ensure your products or goods reach their destination on time and in perfect condition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Get a Quote</h2>
+                <p>Fill out the form below to get a quick quote for your moving needs.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="movingFrom" class="form-label">Moving From</label>
+                            <input type="text" class="form-control" id="movingFrom" placeholder="Enter your current location">
+                        </div>
+                        <div class="mb-3">
+                            <label for="movingTo" class="form-label">Moving To</label>
+                            <input type="text" class="form-control" id="movingTo" placeholder="Enter your destination">
+                        </div>
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <label for="movingDate" class="form-label">When</label>
+                                <input type="date" class="form-control" id="movingDate">
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label for="moveSize" class="form-label">Size</label>
+                                <select class="form-select" id="moveSize">
+                                    <option selected>Select the size of your move</option>
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" style="background-color: #F05D07;border-color:#F05D07;">Get Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Customer Reviews</h2>
+                <p>Hear what our satisfied customers have to say about our services.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card review-card text-center">
+                        <div class="card-body">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjJ6Xc6E3bTwXjo6a09AZuHk8_gKVJf9HASw&s" alt="Customer Image">
+                            <h5 class="card-title">Rifiloe Gumede</h5>
+                            <p class="card-text">"Excellent service! The team was very professional and made my move stress-free. Highly recommended!"</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card review-card text-center">
+                        <div class="card-body">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKX80TE0AdhRhiXj9pPGAh2Of3pbNtm_o2Q&s" alt="Customer Image">
+                            <h5 class="card-title">Annemarie Botha</h5>
+                            <p class="card-text">"Fantastic delivery service! My goods arrived on time and in perfect condition. Will definitely use again."</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card review-card text-center">
+                        <div class="card-body">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMJ6n0MaKi-0lw4gJous6HkyKFGc6uzfEhPg&s" alt="Customer Image">
+                            <h5 class="card-title">Vusi Sithole</h5>
+                            <p class="card-text">"Great truck hire service! The vehicle was in excellent condition and the rates were very affordable."</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </section>
+
+
+<div class="modal fade" id="getInTouchModal" tabindex="-1" aria-labelledby="getInTouchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="getInTouchModalLabel">Get in Touch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <div class="card contact-card text-center">
+                            <div class="card">
+                             
+                                    <div class="card-body">
+                                        <a href="tel:0616818405" class="phoneCall">
+                                        <i class="bi bi-telephone-fill" style="font-size: 2rem;"></i>
+                                        <h5 class="card-title mt-2">Phone</h5>
+                                        <p class="card-text phone" style="color: #6c757d;">061 681 8405</p>
+                                    </a>
+                                    </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="card contact-card text-center">
+                            <div class="card-body " onclick="whatsappButton()">
+                                <i class="bi bi-whatsapp" style="font-size: 2rem; color: #25D366;"></i>
+                                <h5 class="card-title mt-2">WhatsApp</h5>
+                                <p class="card-text whats">078 097 2730</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+</div>
+<footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="about.html" class="text-white">About Us</a></li>
+                    <li><a href="contact.html" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h5>Contact Us</h5>
+                <p><i class="bi bi-geo-alt-fill"></i> 12 Winnie Mandela Rd, Sandton</p>
+                <p><i class="bi bi-telephone-fill"></i> +27 78 097 2730</p>
+                <p><i class="bi bi-envelope-fill"></i> info@mnothotruckhire.co.za</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center py-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <p class="mb-0">© 2024 MnothoTruckHire™. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<div class="whatsapp-button-container" onclick="whatsappButton()">
+    <div class="whatsapp-button">
+        <i class="bi bi-whatsapp" style="font-size: 35px;" data-bs-toggle="modal" data-bs-target="#whatsappModal"></i>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+ 
+
+        function whatsappButton(parameters) {
+            var phoneNumber = '+27780972730'; 
+            
+            var whatsappUrl = 'https://wa.me/' + phoneNumber;
+            window.open(whatsappUrl, '_blank');
+     
+    }
+        </script>
+
+</body>
+</html>
